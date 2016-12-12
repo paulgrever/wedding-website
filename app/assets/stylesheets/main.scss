@@ -3,10 +3,45 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body { 
   font-family: 'Proxima Nova', Helvetica, sans-serif;
+  font-size: 12px;
 }
-.brand {
-  height: 50px;
+
+nav.navbar { 
+  padding: 20px 15px;
 }
-.navbar { 
-  padding: 20px 15px
+
+nav .container, .container.extra {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.badge_link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fe0;
+    box-shadow: .8px .8px .2px #ccc
+}
+
+.page-nav {
+  background-color: #eaeaea;
+  margin-right: -15px;
+  margin-left: -15px;
+  min-height: 50px;
+  .page-nav-text { 
+    color: #111;
+    height: 50px;
+    font-size: 21px;
+    display: block;
+    padding: 12px 20px 16px;
+    &:hover {
+      background: #fff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    &.first {
+      margin-left: -20px;
+    }
+  }
 }
