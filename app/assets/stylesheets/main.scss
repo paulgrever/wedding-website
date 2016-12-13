@@ -21,7 +21,19 @@ nav .container, .container.extra {
     height: 50px;
     border-radius: 50px;
     background-color: #fe0;
-    box-shadow: .8px .8px .2px #ccc
+    box-shadow: .8px .8px .2px #ccc;
+    &.badge-trending {
+      background-color: #e32;
+    }
+}
+nav li.badge-icon {
+  background-color: transparent;
+  &:hover {
+    top: 2px;
+  }
+}
+.nav > li > a:hover { 
+  background-color: transparent !important;
 }
 
 .page-nav {
