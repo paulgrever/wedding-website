@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body { 
-  font-family: 'Proxima Nova', Helvetica, sans-serif;
+  font-family: 'Proxima Nova', Helvetica, sans-serif !important;
   font-size: 12px;
 }
 
@@ -34,6 +34,17 @@ nav li.badge-icon {
 }
 .nav > li > a:hover { 
   background-color: transparent !important;
+}
+
+.description {
+  font-size: 17px;
+  line-height: 23px;
+  color: #333;
+  margin: 0px 0px 11px 0px;
+}
+
+.article-title {
+  font-weight: 600;
 }
 
 .page-nav {
