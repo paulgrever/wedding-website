@@ -1,6 +1,9 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 body { 
   font-family: 'Proxima Nova', Helvetica, sans-serif !important;
   font-size: 12px;
@@ -112,9 +115,51 @@ img.byline_avatar {
     &.fb {
       background-color: #3B5998;
     }
+    &.insta {
+      background-color: #9b6954;
+    }
+    &.email {
+      background-color: #666666;
+    }
+    &.twitter { 
+      background-color: #6aadd1;
+    }
+  }
+  i {
+    height: 100%;
+    color: #fff;
+    &.fa {
+      font-size: 3.0em;
+      &.fa-facebook {
+        // padding-top: .1em;
+      }
+    }
+
   }
 }
 
+.left-space {
+  margin-right: 10px;
+}
+.list-items {
+  font-size: 26px;
+      line-height: 28px;
+      font-weight: 600;
+      color: #121212;
+      padding: 0 0 8px 0;
+      margin: 0;  
+}
+.overview {
+  width: 100%
+}
+
+.item-text {
+  padding: 16px 0 12px 0;
+  font-size: 17px;
+  line-height: 23px;
+  color: #222;
+  margin: 0px;
+}
 
 .ads {
   border: 2px solid #000000;
