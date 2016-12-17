@@ -68,3 +68,44 @@ nav li.badge-icon {
     }
   }
 }
+
+.post-datetimes span.buzz-datetime {
+    display: block;
+    text-transform: none;
+    letter-spacing: -.02em;
+    padding-left: 0;
+    font-weight: normal;
+    font-size: 10px;
+    color: #999;
+    min-height: 16px;
+  }
+
+.post-datetimes {
+    margin: 20px 0;
+    display: block;
+    min-height: 10px;
+}
+
+.byline_body {
+  line-height: 19px;
+}
+
+.byline_title {
+    font-size: 17px;
+    color: #444;
+}
+
+.byline_author {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+img.byline_avatar {
+    width: 90%;
+}
+
+.ads {
+  border: 2px solid #000000;
+  height: 600px;
+  width: 100%
+}
