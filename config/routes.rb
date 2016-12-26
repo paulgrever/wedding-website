@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
-  resources 'home'
+  get '/home', to: 'home#index'
+  get '/info', to: 'home#info'
+  get '/wedding-party', to: 'home#party'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

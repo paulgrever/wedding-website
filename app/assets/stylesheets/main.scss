@@ -14,8 +14,8 @@ nav.navbar {
 }
 
 nav .container, .container.extra {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .badge_link {
@@ -55,6 +55,7 @@ nav li.badge-icon {
   margin-right: -15px;
   margin-left: -15px;
   min-height: 50px;
+  margin-top: 40px;
   .page-nav-text { 
     color: #111;
     height: 50px;
@@ -166,4 +167,18 @@ img.byline_avatar {
   border: 2px solid #000000;
   height: 600px;
   width: 100%
+}
+
+.welcome-modal .modal-footer {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  nav .container, .container.extra {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .page-nav {
+    margin-top: 10px;
+  }
 }
