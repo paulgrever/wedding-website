@@ -152,7 +152,11 @@ img.byline_avatar {
   margin: 20px 0 25px 0px ;  
 }
 .overview {
-  width: 100%
+  width: 100%;
+  &.travel {
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
 }
 
 .item-text {
@@ -173,6 +177,7 @@ img.byline_avatar {
   text-align: left;
 }
 
+
 @media (min-width: 768px) {
   nav .container, .container.extra {
     padding-left: 50px;
@@ -182,3 +187,4 @@ img.byline_avatar {
     margin-top: 10px;
   }
 }
+

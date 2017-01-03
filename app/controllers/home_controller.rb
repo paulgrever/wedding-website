@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def info
   end
+
+  def travel
+  end
 end
