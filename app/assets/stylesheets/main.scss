@@ -159,6 +159,7 @@ img.byline_avatar {
   }
 }
 
+
 .item-text {
   padding: 16px 0 12px 0;
   font-size: 17px;
@@ -172,6 +173,16 @@ img.byline_avatar {
   height: 600px;
   width: 100%
 }
+
+.things-to-do a {
+  color: #07e;
+  text-decoration: none;
+  padding-bottom: 30px;
+  &:hover {
+    color: #e32;
+    text-decoration: none;
+  }    
+} 
 
 .welcome-modal .modal-footer {
   text-align: left;
