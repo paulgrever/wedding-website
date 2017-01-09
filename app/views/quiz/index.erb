@@ -304,9 +304,29 @@
 
     </div>
     <div class='col-md-5 hidden-sm hidden-xs'>
-      <div class='row text-center'>
-        <h2><b>Quiz Leader Board:</b></h2>
-      </div>
+      <% if @quizzes_taken%>
+        <div class='row text-center'>
+          <h2><b>Quiz Leader Board:</b></h2>
+        </div>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td>Score</td>
+              <td>Name</td>
+              <td>Message</td>
+            </tr>
+          </thead>
+          <tbody>
+            <% @quiz_results.each do |quiz_result| %>
+              <tr>
+                <td><strong><%= quiz_result.score %></strong></td>
+                <td><%= quiz_result.name %></td> 
+                <td><%= quiz_result.message %></td>              
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% end %>
       <%= render 'partials/things' %>
     </div>
   </div>
