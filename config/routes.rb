@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/wedding-party', to: 'home#party'
   get '/travel', to: 'home#travel'
   get '/quiz', to: 'quiz#index'
-  post '/quiz', to: 'quiz#new'
+  get '/quiz/new', to: 'quiz#new'
+  post '/quiz', to: 'quiz#create'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
