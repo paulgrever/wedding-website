@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   get '/quiz', to: 'quiz#index'
   get '/quiz/new', to: 'quiz#new'
   post '/quiz', to: 'quiz#create'
+  get '/rsvp', to: 'home#rsvp'
+  get '/registry', to: 'home#registry'
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
