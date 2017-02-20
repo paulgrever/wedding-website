@@ -2,10 +2,23 @@
 // All this logic will automatically be available in application.js.
 $( document ).ready(function() {
   displayModal();
+  launchIconModal();
 });
 
 function displayModal() {
   if (window.location.pathname === '/') {
-    $('.modal').modal('show');
+    $('#welcome-modal.modal').modal('show');
   }
 }
+
+function launchIconModal() {
+  $('li.badge-icon a').on('click', function (e) {
+    e.preventDefault();
+    $(".images-from-icons div").addClass('hidden');
+    var titleText = $(e.currentTarget).data('value');
+    $('h4#bone-pics-modal').text(titleText);
+    $(".images-from-icons div." + titleText.toLowerCase()).removeClass('hidden');
+    $('#bone-pics').modal("show");
+  });
+}
+

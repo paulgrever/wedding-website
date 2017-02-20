@@ -19,5 +19,32 @@
       <% end %>
     </div>
     <%= yield %>
+    <div class="modal fade" id="bone-pics" tabindex="-1" role="dialog" aria-labelledby="bone-pics-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="bone-pics-modal">LOL</h4>
+          </div>
+          <div class="modal-body images-from-icons">
+            <div class="lol hidden">
+              <%= image_tag("lol.jpg", class: "overview") %>
+            </div>
+            <div class="win hidden">
+              <%= image_tag("win.jpg", class: "overview") %>
+            </div>
+            <div class="omg hidden">
+              <%= image_tag("omg.jpg", class: "overview") %>
+            </div>
+            <div class="cute hidden">
+              <%= image_tag("cute.jpg", class: "overview") %>
+            </div>
+            <div class="trending hidden">
+              <%= image_tag("trending.jpg", class: "overview") %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
