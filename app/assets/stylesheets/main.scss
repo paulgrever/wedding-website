@@ -301,8 +301,14 @@ img.byline_avatar {
     font-family: "FormalScriptBold";
     font-size: 40px;
   }
+  .last {
+    margin-bottom: 200px;
+  }
 }
 
+.end {
+  margin-bottom: 200px;
+}
 
 @media (min-width: 768px) {
   nav .container, .container.extra {
