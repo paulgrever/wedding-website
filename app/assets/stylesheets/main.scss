@@ -4,6 +4,21 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+@font-face {
+  font-family: "Precious";
+  src: url(/assets/Precious.ttf);
+}
+
+@font-face {
+  font-family: "FormalScript";
+  src: url(/assets/FormalScript.otf);
+}
+
+@font-face {
+  font-family: "FormalScriptBold";
+  src: url(/assets/FormalScriptBold.otf);
+}
+
 body { 
   font-family: 'Proxima Nova', Helvetica, sans-serif !important;
   font-size: 12px;
@@ -269,6 +284,25 @@ img.byline_avatar {
 .blah {
   height: 20vh;
 }
+
+.wedding-info {
+  .fancy-font {
+    font-family: "Precious"
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 150%;
+  }
+  h2 {
+    font-size: 60px;
+    line-height: 150%;
+  }
+  .formal-script { 
+    font-family: "FormalScriptBold";
+    font-size: 40px;
+  }
+}
+
 
 @media (min-width: 768px) {
   nav .container, .container.extra {
