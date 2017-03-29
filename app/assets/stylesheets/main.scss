@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: "Precious";
-  src: url(/assets/Precious.ttf);
+  src: font-url("/assets/Precious.ttf");
 }
 
 @font-face {
   font-family: "FormalScript";
-  src: url(/assets/FormalScript.otf);
+  src: font-url("/assets/FormalScript.otf");
 }
 
 @font-face {
   font-family: "FormalScriptBold";
-  src: url(/assets/FormalScriptBold.otf);
+  src: font-url("/assets/FormalScriptBold.otf");
 }
 
 body { 
