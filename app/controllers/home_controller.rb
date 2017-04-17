@@ -8,8 +8,6 @@ class HomeController < ApplicationController
   def travel
   end
 
-  def rsvp
-  end
 
   def registry
   end

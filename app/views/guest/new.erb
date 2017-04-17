@@ -1,0 +1,22 @@
+<div class='container rsvp'>
+  <div class='row text-center'>
+    <h1>RSVP</h>
+  </div>
+  <div class='row'>
+    <div class='col-xs-6 col-xs-offset-3'>
+      <%= form_for @rsvp do |f| %>
+          <div class='form-group'>
+            <%= f.label :first_name %>:
+            <%= f.text_field :first_name, class: "form-control" %>
+          </div>
+          <div class='form-group'>
+            <%= f.label :last_name %>:
+            <%= f.text_field :last_name, class: "form-control" %>
+          </div>
+
+        <%= f.submit "RSVP",  class: "btn btn-lg btn-success" %>
+      <% end %>
+      
+    </div>
+  </div>
+</div>

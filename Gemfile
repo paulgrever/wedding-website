@@ -30,6 +30,7 @@ gem 'font-awesome-sass'
 gem "figaro"
 gem 'jquery-ui-rails'
 gem "faker"
+# gem "rb-readline"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
