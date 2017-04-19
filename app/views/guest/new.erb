@@ -3,18 +3,39 @@
     <h1>RSVP</h>
   </div>
   <div class='row'>
-    <div class='col-xs-6 col-xs-offset-3'>
-      <%= form_for @rsvp do |f| %>
-          <div class='form-group'>
-            <%= f.label :first_name %>:
-            <%= f.text_field :first_name, class: "form-control" %>
+    <div class='col-xs-8 col-xs-offset-2'>
+      <%= form_for @rsvp, html: {class: ''}  do |f| %>
+          <div class='form-group col-xs-6'>
+            <label>Your first name:</label>
+            <%= f.text_field :first_name, class: "form-control", required: true %>
+          </div>
+          <div class='form-group col-xs-6'>
+            <label>Your last name:</label>
+            <%= f.text_field :last_name, class: "form-control", required: true %>
+          </div>
+          <div class='form-group col-xs-6'>
+            <label>Guest first name:</label>
+            <%= f.text_field :plus_one_first_name, class: "form-control" %>
+          </div>
+          <div class='form-group col-xs-6'>
+            <label>Guest last name:</label>
+            <%= f.text_field :plus_one_last_name, class: "form-control" %>
+          </div>
+          <div class='form-group col-xs-6' id='attending_wedding'>
+            <span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+            <span class="hidden glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <%= f.radio_button :attending_wedding, true, class: 'hidden radio-attend', required: true %> 
+            <%= label :attending_wedding, 'Delighted to Attend', class: 'yes' %>
+          </div>
+          <div class='form-group col-xs-6' id='not_attending_wedding'>
+            <span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+            <span class="hidden glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <%= f.radio_button :attending_wedding, false, class: 'hidden radio-not-attend' %>
+            <%= label :attending_wedding, 'Sadly will miss the party of a lifetime', class: 'no' %>
           </div>
           <div class='form-group'>
-            <%= f.label :last_name %>:
-            <%= f.text_field :last_name, class: "form-control" %>
+            <%= f.submit "RSVP",  class: "btn btn-lg btn-block btn-success" %>
           </div>
-
-        <%= f.submit "RSVP",  class: "btn btn-lg btn-success" %>
       <% end %>
       
     </div>
